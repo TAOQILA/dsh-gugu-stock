@@ -1,0 +1,22 @@
+# Dependencies & build artifacts
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+
+# Local settings & secrets (never publish)
+settings.json
+.endpoint
+.api-token
+.token-cache*
+
+# Real personal data / sensitive imports
+tools/wb-import.csv
+
+# Test output
+acceptance/out/
+
+# OS & editor leftovers
+.DS_Store
+*.bak-*
+*.sticky

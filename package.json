@@ -1,0 +1,37 @@
+{
+  "name": "dsh-gugu-stock",
+  "version": "1.24.4",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "description": "谷谷股 — DSH 设置页里的小账本：定时采样 DS 余额、WB 积分、阿里云卡券与 Tokens 消耗，生成余额折线图、花费柱状图与消耗累计图",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./icon": "./icon.svg",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib/",
+    "scripts/",
+    "locale/",
+    "icon.svg",
+    "docs/",
+    "README.md",
+    "cordis.patch.yml"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-slots"
+      ]
+    }
+  }
+}

@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    name: Syntax + acceptance (${{ matrix.os }} / py${{ matrix.python }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ['3.10', '3.12']
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+
+      - name: Install Python deps
+        run: python -m pip install --upgrade pip matplotlib
+
+      - name: Syntax check (JS)
+        run: |
+          node --check index.js
+          node --check client.js
+
+      - name: Syntax check (Python)
+        run: python -m py_compile scripts/gugu_chart.py
+
+      - name: Acceptance suite
+        shell: bash
+        # CI 上没有个人数据：live.test.mjs 的三个用例会自动 skip，
+        # 其余 P0 断言（图形规范、CSV、插件宿主、清单、client bundle）照常全跑。
+        run: bash acceptance/tests/run_all.sh

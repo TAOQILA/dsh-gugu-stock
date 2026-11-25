@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "title": "Gugu Stock",
+    "description": "Appends the DeepSeek balance, WorkBuddy credits, Aliyun coupon balance and token spend into one CSV, and draws the balance line chart, the spend bar chart and the cumulative spend chart in the settings panel.",
+    "detail": "docs/DETAIL.en.md"
+  },
+  "nav": "Gugu Stock",
+  "title": "Gugu Stock v1.24.4 · Personal ledger",
+  "openCsv": "Open CSV",
+  "sampleNow": "Sample now",
+  "makeChart": "Generate chart",
+  "charting": "Rendering with Python…",
+  "sampling": "Reading balance…",
+  "opening": "Opening file…",
+  "balance": "Latest balance",
+  "lastSample": "Last sample",
+  "nextSample": "Next sample",
+  "points": "Rows",
+  "days": "Days",
+  "updatedAt": "Updated",
+  "never": "No sample yet",
+  "chartAlt": "Gugu Stock line chart",
+  "error": "Action failed",
+  "emptyCsv": "No rows yet — click \"Sample now\" first.",
+  "brand": "Gugu Stock",
+  "titleSuffix": "v1.24.4 · Personal ledger"
+}

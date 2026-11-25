@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "title": "谷谷股",
+    "description": "把 DeepSeek 余额、WorkBuddy 积分、阿里云卡券余额与 Tokens 消耗追加进同一个 CSV，并在设置页生成余额折线图、花费柱状图与消耗累计图。",
+    "detail": "docs/DETAIL.md"
+  },
+  "nav": "谷谷股",
+  "title": "谷谷股 v1.24.4 · 自用小账本",
+  "openCsv": "打开 csv 文件",
+  "sampleNow": "立即采样",
+  "makeChart": "生成谷谷股图",
+  "charting": "正在用 Python 出图…",
+  "sampling": "正在读取余额…",
+  "opening": "正在打开文件…",
+  "balance": "最新余额",
+  "lastSample": "最近采样",
+  "nextSample": "下次采样",
+  "points": "记录条数",
+  "days": "有数据天数",
+  "updatedAt": "刷新于",
+  "never": "还没有采样记录",
+  "chartAlt": "谷谷股折线图",
+  "error": "操作失败",
+  "emptyCsv": "CSV 还没有数据，先点一次「立即采样」。",
+  "brand": "谷谷股",
+  "titleSuffix": "v1.24.4 · 自用小账本"
+}
