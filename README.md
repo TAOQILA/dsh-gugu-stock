@@ -2,6 +2,8 @@
 
 DSH 开着时每 15 分钟记录一次 DeepSeek 充值余额、WorkBuddy 积分、**日 Tokens 消耗**（可选：阿里云卡券余额），并在 **设置 → 谷谷股**（或左侧栏谷谷股图标）里出图。
 
+![Social Preview](./social-preview.png)
+
 ## 快速开始 / Quick Start
 
 面向第一次使用的用户，照下面五步做即可。
